@@ -1,47 +1,17 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     width: 100%;
     background-color: #fff;
 }
 
-h1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 
-h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
-}
 
 /* header */
 
 header {
-    background-color: #ECECEC;
+    background-color: #fff;
+    border-bottom: 1px solid #ECECEC;
     
 }
 
@@ -56,7 +26,6 @@ header {
 
 .logo {   
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -78,25 +47,24 @@ header {
 .nav {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.nav-active {
+.nav .nav-active a {
     color: #2196F3;
 }
 
 .nav li,
 .head-address li {
     list-style: none;
-    display: inline;
 }
 
 .nav li:nth-child(2) {
-    margin: 0 52px;
+    margin: 0 50px;
 }
 
 .nav a {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -116,7 +84,12 @@ header {
 .add-container {
     display: flex;
     align-items: center;
+}
 
+.head-address {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .head-address li:nth-child(1) {
@@ -124,8 +97,6 @@ header {
 }
 
 .head-address a {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -142,18 +113,21 @@ header {
 }
 
 .s1 h1 {
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .s1 button {
-    text-align: center;
-    display: inline-block;
     margin: 0 auto;
-    width: 216px;
-    height: 50px;
+    width: 221px;
+    height: 52px;
     padding: 10px 32px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -169,7 +143,9 @@ header {
 
 .s2 {
     width: 1170px;
-    margin: 94px auto;
+    margin: 94px auto 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .s2 ul {
@@ -190,24 +166,42 @@ header {
     margin-right: 30px;
 }
 
+.s2 h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0;
+}
+
 .s2 p {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 10px 0 0 0;
 }
 
 .s3 {
     width: 1170px;
     margin: 94px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .s3 h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .s3 ul {
@@ -228,19 +222,25 @@ header {
 }
 
 .s4 {
-    background: #F5F4FA;
-    padding: 94px;
+    background: #F5F4FA;    
     width: 100%;
 }
 
 .s4-container {
     width: 1170px;
     margin: 0 auto;
+    padding: 94px 0;
 }
 
 .s4 h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .s4 ul {
@@ -264,20 +264,16 @@ header {
 }
 
 .name {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin: 30px 0 0 0;
+    margin: 25px 0 0 0;
 }
 
 .job-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -298,61 +294,60 @@ header {
 }
 
 .pf-nav {
-    width: 575px;
+    width: 576px;
     margin: 0 auto 50px auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-.active {
+.pf-nav .active {
+    padding: 6px 25px;
     background-color: #2196F3 !important;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #fff;
 }
 
-.pf-nav li {
-    padding: 6px 25px;
+.pf-nav button {
+    padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
-}
-
-.pf-nav li:not(:last-child) {
-    margin-right: 8px;
-}
-
-.pf-nav li a {
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    cursor: pointer;
+}
+
+.pf-nav li:not(:last-child) {
+    margin-right: 8px;
 }
 
 .pf-work {
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0px;
 }
 
 .pf-work li {
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
 }
 
 .pf-work li:not(:nth-child(-n+3)) {
     margin-top: 30px;
 }
 
-.pf-work li:not(:last-child) {
+.pf-work li:not(:nth-child(3n+3)) {
     margin-right: 30px;
 }
 
 .pf-work h2 {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -365,7 +360,6 @@ header {
 
 .pf-work p {
     margin: 4px 0 20px 24px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -389,7 +383,6 @@ footer {
 }
 
 .footer-address {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -406,10 +399,10 @@ footer {
 
 .footer-contacts li {
     list-style: none;
+    margin:  7px 0;
 }
 
 .footer-contacts li a {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
